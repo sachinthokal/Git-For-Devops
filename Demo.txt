@@ -1,2 +1,0 @@
-Learning Git from feature/update branch
-Added from f2/update
