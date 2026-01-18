@@ -71,22 +71,14 @@ git clone https://github.com/username/repo.git
 
 1. Generate SSH key:
 ```bash
-ssh-keygen -t ed25519 -C "youremail@example.com"
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 - Press Enter to accept default file location
 - Optionally, add a passphrase for security
 
-2. Start the SSH agent and add your key:
+2. Copy the public key:
 ```bash
-# Start agent
-eval "$(ssh-agent -s)"
-# Add key
-ssh-add ~/.ssh/id_ed25519
-```
-
-3. Copy the public key:
-```bash
-cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_rsa.pub
 ```
 - Copy the output and add it to your GitHub/GitLab SSH keys in account settings
 
